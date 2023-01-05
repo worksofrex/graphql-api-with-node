@@ -1,0 +1,30 @@
+{
+  "name": "graphql-api-course-with-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon  src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndzhwr/graphql-api-course-with-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndzhwr/graphql-api-course-with-node/issues"
+  },
+  "homepage": "https://github.com/ndzhwr/graphql-api-course-with-node#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
