@@ -3,7 +3,7 @@ const { authors, books } = require("../data/data");
 const { AuthorType } = require("./AuthorType");
 
 const NameType  = new GraphQLObjectType({
-    name : 'name',
+    name : 'Name',
     description : 'The name of the book',
     fields :  {
         fullname : {
@@ -22,19 +22,8 @@ const BookType = new GraphQLObjectType({
     description: 'This represents a book written by an author',
     fields: () => ({
         id : { type: GraphQLNonNull(GraphQLInt) },
-        // name : { type: GraphQLNonNull(GraphQLString) },
-        name : { 
-            type: BookType ,
-            resolve : (book) => books.find(book => book.id == book.id)
-        },
+        name : { type: GraphQLNonNull(GraphQLString) },
         authorId : { type: GraphQLNonNull(GraphQLInt) } ,
-        author : {
-            type : AuthorType ,
-            resolve : (book) => {
-                return authors.find(author => author.id == book.authorId)
-            }
-        }
-
     })
 })
 
