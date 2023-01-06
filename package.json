@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ndzhwr/graphql-api-course-with-node#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
